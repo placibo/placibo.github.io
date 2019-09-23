@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" type="image/png" href="/images/Flash_Logo.png" sizes="32x32" />
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -13,6 +14,7 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    {% seo %}
   </head>
 
   <body>
@@ -22,13 +24,18 @@
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <center><h3 class="site-name"><a href="{{ site.baseurl }}/"><b>{{ site.name }}</b></a></h3></center>
+            <center><h4 class="site-description">{{ site.description }} @ Twitter</h4></center>
+            <center><a href="https://twitter.com/rishabh_misra_?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @rishabh_misra_</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
           </div>
+          
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/blog"><b>Blog</b></a>
+            <a href="{{ site.baseurl }}/projects"><b>Projects</b></a>
+            <a href="{{ site.baseurl }}/publications"><b>Publications</b></a>
+            <a href="{{ site.baseurl }}/Rishabh_Misra_Resume_latest.pdf" target="_blank"><b>Resume</b></a>
+            <a href="{{ site.baseurl }}/about"><b>About</b></a>
           </nav>
         </header>
       </div>
